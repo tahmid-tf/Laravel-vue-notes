@@ -1,0 +1,1 @@
+https://github.com/gilbitron/laravel-vue-pagination
