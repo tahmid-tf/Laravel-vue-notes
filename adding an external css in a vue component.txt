@@ -1,0 +1,4 @@
+<script>
+import "../../../../public/css/blog-home.css";
+export default {};
+</script>

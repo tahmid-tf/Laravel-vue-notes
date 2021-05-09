@@ -1,0 +1,5 @@
+window.location.reload();
+
+//only relaod the current page,
+
+location.reload();

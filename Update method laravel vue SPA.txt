@@ -1,0 +1,18 @@
+ upload() {
+            const formData = new FormData();
+            formData.set("title", this.title);
+            formData.set("description", this.description);
+            formData.set("category", this.category);
+            formData.set("image", this.image);
+            formData.append("_method", "PUT"); //important
+            axios
+                .post(`/api/post/4`, formData)
+                .then(response => {
+                    if (response.status === 200) {
+                        this.$router.push({ name: "ViewPost" });
+                    }
+                })
+                .catch(error => {
+                    console.log(error);
+                });
+        }
